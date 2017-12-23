@@ -53,6 +53,6 @@ class Person {
         }
 
         String toString() {
-                "Person [firstName=${firstName}, lastName=${lastName}}, dateCreated=${dateCreated}, lastUpdated=${lastUpdated}]"
+                "Person [id=${id}, firstName=${firstName}, lastName=${lastName}, dateCreated=${dateCreated}, lastUpdated=${lastUpdated}]"
         }
 }

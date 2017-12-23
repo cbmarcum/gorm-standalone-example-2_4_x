@@ -21,6 +21,8 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.context.ApplicationContext
 import org.springframework.context.MessageSource
+import org.springframework.context.annotation.Configuration
+import org.springframework.context.annotation.Primary
 import org.springframework.validation.FieldError
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
@@ -30,6 +32,7 @@ import org.springframework.context.annotation.ComponentScan
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.CommandLineRunner
 import org.springframework.beans.factory.annotation.Autowired
+
 
 @EnableAutoConfiguration
 @ComponentScan
@@ -44,6 +47,7 @@ class Application implements CommandLineRunner {
 
   @Autowired
   private MessageSource messageSource
+
 
   @Override
   public void run(String... args) throws Exception {
